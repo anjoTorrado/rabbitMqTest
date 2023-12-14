@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" packagingData="true">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %logger %highlight(%-5level) %marker %message%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="rabbitmq1" level="off"/>
+    <logger name="rabbitmq2" level="off"/>
+    <logger name="rabbitmq3" level="off"/>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
